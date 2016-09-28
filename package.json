@@ -1,6 +1,6 @@
 {
   "name": "num-to-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Converts num to any Alphabetic base",
   "main": "index.js",
   "scripts": {

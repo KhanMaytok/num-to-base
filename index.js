@@ -1,3 +1,39 @@
-exports.printMsg = function() {
-  console.log("This is a message from the demo package");
-}
+/**
+ * Convert decimal integer numbers to another base
+ *
+ * @param  {Integer} num
+ * @param  {Integer} b
+ * @return {String}
+ */
+module.exports = {
+	toBase: function(num, b) {
+	    if(b == undefined){
+	    	b = 62;
+	    }
+	    var base='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	    var r = num  % b;
+	    var res = base[r];
+	    var q = Math.floor(num/b);
+	    while (q) {
+	        r = q % b;
+	        q = Math.floor(q/b);
+	        res = base[r].res;
+	      }
+		return res;
+	},
+
+  /**
+   * Unescape special characters in the given string of html.
+   *
+   * @param  {String} html
+   * @return {String}
+   */
+  unescape: function(html) {
+    return String(html)
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, ''')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>');
+  }
+};
