@@ -11,13 +11,13 @@ module.exports = {
 	    	b = 62;
 	    }
 	    var base='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-	    var r = num  % b;
+	    var r = num % b;
 	    var res = base[r];
 	    var q = Math.floor(num/b);
 	    while (q) {
 	        r = q % b;
 	        q = Math.floor(q/b);
-	        res = base[r].res;
+	        res = base[r] + res;
 	      }
 		return res;
 	}
