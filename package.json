@@ -1,6 +1,6 @@
 {
   "name": "num-to-base",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "Converts num to any Alphabetic base",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/KhanMaytok/num-to-base/issues"
   },
-  "homepage": "https://github.com/KhanMaytok/num-to-base#readme"
+  "homepage": "https://github.com/KhanMaytok/num-to-base#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  }
 }
-
