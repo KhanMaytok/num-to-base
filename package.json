@@ -1,1 +1,25 @@
+{
+  "name": "num-to-base",
+  "version": "0.0.1",
+  "description": "Converts num to any Alphabetic base\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[a",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhanMaytok/num-to-base.git"
+  },
+  "keywords": [
+    "base",
+    "number",
+    "convert"
+  ],
+  "author": "Giancarlo Ventura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KhanMaytok/num-to-base/issues"
+  },
+  "homepage": "https://github.com/KhanMaytok/num-to-base#readme"
+}
 
