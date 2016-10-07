@@ -1,2 +1,2 @@
 # num-to-base
-Converts num to any Alphabetic base
+Converts a integer to another base
