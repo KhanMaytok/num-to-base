@@ -4,7 +4,8 @@
   "description": "Converts num to any Alphabetic base",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
