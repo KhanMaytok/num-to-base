@@ -8,7 +8,7 @@
 module.exports = {
     toBase: function(num, b = 62) {
         var base = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-	var q = Math.abs(num);
+        var q = Math.abs(num);
         var r = q % b;
         var res = base[r];
         while (q = Math.floor(q / b)) {
@@ -16,12 +16,12 @@ module.exports = {
             res = base[r] + res;
         }
         if(num < 0)
-		return '-' + res;
-	else
-		return res;
+            return '-' + res;
+        else
+            return res;
     },
     to10: function(num, b) {
-    	if (b == undefined) {
+        if (b == undefined) {
             b = 62;
         }
         var base = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
