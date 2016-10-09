@@ -10,7 +10,7 @@ module.exports = {
         if (b == undefined) {
             b = 62;
         }
-        var base = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var base = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
         var r = num % b;
         var res = base[r];
         var q = Math.floor(num / b);
@@ -25,7 +25,7 @@ module.exports = {
     	if (b == undefined) {
             b = 62;
         }
-        var base = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var base = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
         var limit = (num + '').length;
         var res = base.indexOf(num[0]);
         for (var i = 1; i < limit; i++) {
