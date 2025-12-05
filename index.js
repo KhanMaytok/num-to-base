@@ -6,23 +6,22 @@
  * @return {String}
  */
 module.exports = {
-    toBase: function(num, b) {
-        if (b == undefined) {
-            b = 62;
-        }
+    toBase: function(num, b = 62) {
         var base = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-        var r = num % b;
+        var q = Math.abs(num);
+        var r = q % b;
         var res = base[r];
-        var q = Math.floor(num / b);
-        while (q) {
+        while (q = Math.floor(q / b)) {
             r = q % b;
-            q = Math.floor(q / b);
             res = base[r] + res;
         }
-        return res;
+        if(num < 0)
+            return '-' + res;
+        else
+            return res;
     },
     to10: function(num, b) {
-    	if (b == undefined) {
+        if (b == undefined) {
             b = 62;
         }
         var base = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
